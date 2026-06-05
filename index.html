@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISTAG - GSI | Portail Étudiants</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-graduation-cap"></i>
+                <span>ISTAG <span class="logo-light">Option GSI</span></span>
+            </div>
+            <div class="nav-links">
+                <a href="index.html" class="active"><i class="fas fa-home"></i> Accueil</a>
+                <a href="cours.html"><i class="fas fa-calendar-alt"></i> Cours & EDT</a>
+                <a href="ressources.html"><i class="fas fa-folder-open"></i> Ressources</a>
+                <a href="projets.html"><i class="fas fa-code"></i> Projets</a>
+                <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+            </div>
+            <div class="user-info">
+                <i class="fas fa-user-circle"></i>
+                <span>Étudiant GSI</span>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Bannière bienvenue -->
+        <section class="hero">
+            <div class="hero-content">
+                <div class="hero-badge">Filière Gestion des Systèmes d'Information</div>
+                <h1>Bienvenue sur le portail <span class="highlight">étudiants GSI</span></h1>
+                <p>Cours, ressources, projets et actualités de votre filière</p>
+                <div class="hero-buttons">
+                    <a href="cours.html" class="btn btn-primary">Voir l'emploi du temps
+                        de la semaine <i class="fas fa-arrow-right"></i></a>
+                    <a href="ressources.html" class="btn btn-secondary">Accéder aux ressources <i class="fas fa-download"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Actualités GSI -->
+        <section class="actualites">
+            <div class="container">
+                <div class="section-header">
+                    <h2><i class="fas fa-megaphone"></i> Actualités de la filière GSI</h2>
+                    <a href="#" class="voir-tout">Voir tout <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="actu-grid">
+                    <div class="actu-card">
+                        <div class="actu-categorie">📢 Information</div>
+                        <h3>Soutenance des projets de fin de semestre</h3>
+                        <p>Les soutenances auront lieu du 15 au 20 décembre en salle B101. Planning détaillé disponible dans l'espace projets.</p>
+                        <span class="actu-date"><i class="far fa-calendar-alt"></i> 05 décembre 2025</span>
+                    </div>
+                    <div class="actu-card">
+                        <div class="actu-categorie">💻 Hackathon</div>
+                        <h3>Hackathon ISTAG Édition 2025</h3>
+                        <p>Inscriptions ouvertes jusqu'au 10 janvier. Thème : "IA et transformation digitale". Les gagnants remportent des stages en entreprise.</p>
+                        <span class="actu-date"><i class="far fa-calendar-alt"></i> 01 décembre 2025</span>
+                    </div>
+                    <div class="actu-card">
+                        <div class="actu-categorie">📚 Concours</div>
+                        <h3>Concours de projet innovant - 25000 FCFA à gagner</h3>
+                        <p>Développez une solution innovante autour des systèmes d'information. Dépôt des dossiers avant le 20 janvier.</p>
+                        <span class="actu-date"><i class="far fa-calendar-alt"></i> 28 novembre 2025</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Accès rapides étudiants -->
+        <section class="acces-rapides">
+            <div class="container">
+                <h2><i class="fas fa-bolt"></i> Accès rapides</h2>
+                <div class="rapides-grid">
+                    <div class="rapide-card">
+                        <i class="fas fa-chalkboard-user"></i>
+                        <h3>Emploi du temps</h3>
+                        <p>Cours, TP et salles</p>
+                        <a href="cours.html">Consulter →</a>
+                    </div>
+                    <div class="rapide-card">
+                        <i class="fas fa-database"></i>
+                        <h3>Ressources GSI</h3>
+                        <p>Cours, TD, examens</p>
+                        <a href="ressources.html">Consulter →</a>
+                    </div>
+                    <div class="rapide-card">
+                        <i class="fas fa-laptop-code"></i>
+                        <h3>Projets étudiants</h3>
+                        <p>Dépôt et documentation</p>
+                        <a href="projets.html">Consulter →</a>
+                    </div>
+                    <div class="rapide-card">
+                        <i class="fas fa-calendar-check"></i>
+                        <h3>RDV professeurs</h3>
+                        <p>Prise de rendez-vous</p>
+                        <a href="contact.html">Consulter →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Chiffres clés -->
+        <section class="stats">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <span class="stat-number">156</span>
+                        <span class="stat-label">Étudiants GSI</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">12</span>
+                        <span class="stat-label">Enseignants</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">8</span>
+                        <span class="stat-label">Projets en cours</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">24</span>
+                        <span class="stat-label">Ressources en ligne</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4><i class="fas fa-graduation-cap"></i> ISTAG - GSI</h4>
+                <p>Institut Supérieur des Technologies<br>Avancées et de Gestion<br>Filière Gestion des Systèmes d'Information</p>
+            </div>
+            <div class="footer-section">
+                <h4>Liens utiles</h4>
+                <ul>
+                    <li><a href="cours.html">Emploi du temps</a></li>
+                    <li><a href="ressources.html">Bibliothèque de cours</a></li>
+                    <li><a href="projets.html">Espace projets</a></li>
+                    <li><a href="contact.html">Contact professeurs</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p><i class="fas fa-map-marker-alt"></i> Quartier Fouda, Yaoundé</p>
+                <p><i class="fas fa-phone"></i> +237 691 17 49 74</p>
+                <p><i class="fas fa-envelope"></i> info@istag-institut.info</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 ISTAG - Filière Gestion des Systèmes d'Information | Portail Étudiants</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

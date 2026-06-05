@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GSI-ISTAG - Cours & Emploi du temps</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-graduation-cap"></i>
+                <span>ISTAG <span class="logo-light">GSI</span></span>
+            </div>
+            <div class="nav-links">
+                <a href="index.html"><i class="fas fa-home"></i> Accueil</a>
+                <a href="cours.html" class="active"><i class="fas fa-calendar-alt"></i> Cours & EDT</a>
+                <a href="ressources.html"><i class="fas fa-folder-open"></i> Ressources</a>
+                <a href="projets.html"><i class="fas fa-code"></i> Projets</a>
+                <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+            </div>
+            <div class="user-info">
+                <i class="fas fa-user-circle"></i>
+                <span>Étudiant GSI</span>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Emploi du temps & Matières</h1>
+                <p>Semestre 3 - Promotion GSI 2025-2026</p>
+            </div>
+        </section>
+
+        <section class="emploi-du-temps">
+            <div class="container">
+                <div class="section-header">
+                    <h2><i class="fas fa-clock"></i> Planning hebdomadaire</h2>
+                    <div class="semaine-selector">
+                        <label for="semaine">Semaine :</label>
+                        <select id="semaine" class="semaine-select">
+                            <option value="1">Semaine 1 (Cours)</option>
+                            <option value="2" selected>Semaine 2 (TP)</option>
+                            <option value="3">Semaine 3 (Projets)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="edt-container" id="edt-container">
+                    <!-- Le tableau sera généré par JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Liste des matières du semestre -->
+        <section class="matieres">
+            <div class="container">
+                <h2><i class="fas fa-book"></i> Matières du semestre 3</h2>
+                <div class="matieres-grid">
+                    <div class="matiere-card">
+                        <div class="matiere-icon"><i class="fas fa-database"></i></div>
+                        <div class="matiere-info">
+                            <h3>Bases de données avancées</h3>
+                            <p>Prof. NDOUMBE Jacques</p>
+                            <span class="credits">4 crédits</span>
+                        </div>
+                    </div>
+                    <div class="matiere-card">
+                        <div class="matiere-icon"><i class="fas fa-network-wired"></i></div>
+                        <div class="matiere-info">
+                            <h3>Réseaux et Télécommunications</h3>
+                            <p>Prof. MBARGA Paul</p>
+                            <span class="credits">3 crédits</span>
+                        </div>
+                    </div>
+                    <div class="matiere-card">
+                        <div class="matiere-icon"><i class="fas fa-code"></i></div>
+                        <div class="matiere-info">
+                            <h3>Développement Web avancé</h3>
+                            <p>Prof. ESSOMBA Claire</p>
+                            <span class="credits">4 crédits</span>
+                        </div>
+                    </div>
+                    <div class="matiere-card">
+                        <div class="matiere-icon"><i class="fas fa-chart-line"></i></div>
+                        <div class="matiere-info">
+                            <h3>Business Intelligence</h3>
+                            <p>Prof. TCHINDA Roger</p>
+                            <span class="credits">3 crédits</span>
+                        </div>
+                    </div>
+                    <div class="matiere-card">
+                        <div class="matiere-icon"><i class="fas fa-shield-alt"></i></div>
+                        <div class="matiere-info">
+                            <h3>Sécurité des SI</h3>
+                            <p>Prof. ONDOUA Marc</p>
+                            <span class="credits">3 crédits</span>
+                        </div>
+                    </div>
+                    <div class="matiere-card">
+                        <div class="matiere-icon"><i class="fas fa-project-diagram"></i></div>
+                        <div class="matiere-info">
+                            <h3>Gestion de projet IT</h3>
+                            <p>Prof. BELL Anne</p>
+                            <span class="credits">3 crédits</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4><i class="fas fa-graduation-cap"></i> ISTAG - GSI</h4>
+                <p>Institut Supérieur des Technologies Avancées et de Gestion<br>Filière Gestion des Systèmes d'Information</p>
+            </div>
+            <div class="footer-section">
+                <h4>Liens utiles</h4>
+                <ul>
+                    <li><a href="cours.html">Emploi du temps</a></li>
+                    <li><a href="ressources.html">Bibliothèque de cours</a></li>
+                    <li><a href="projets.html">Espace projets</a></li>
+                    <li><a href="contact.html">Contact professeurs</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p><i class="fas fa-map-marker-alt"></i> Quartier Fouda, Yaoundé</p>
+                <p><i class="fas fa-phone"></i> +237 691 17 49 74</p>
+                <p><i class="fas fa-envelope"></i> info@istag-institut.info</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 ISTAG - Filière Gestion des Systèmes d'Information | Portail Étudiants</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

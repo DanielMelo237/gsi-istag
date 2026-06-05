@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>GSI-ISTAG - Ressources pédagogiques</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-school"></i>
+                  <span>ISTAG <span class="logo-light">GSI</span></span>
+            </div>
+            <div class="nav-links">
+                <a href="index.html"><i class="fas fa-home"></i> Accueil</a>
+                <a href="ressources.html"><i class="fas fa-folder-open"></i> Ressources</a>
+                <a href="actualites.html"><i class="fas fa-calendar-alt"></i> Actualités</a>
+                <a href="contact.html" class="active"><i class="fas fa-envelope"></i> Contact</a>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Contactez-nous</h1>
+                <p>Une question ? Nous sommes à votre écoute</p>
+            </div>
+        </section>
+
+        <section class="contact">
+            <div class="container">
+                <div class="contact-grid">
+                    <!-- Formulaire -->
+                    <div class="contact-form">
+                        <h2><i class="fas fa-paper-plane"></i> Envoyez-nous un message</h2>
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label for="nom">Nom complet *</label>
+                                <input type="text" id="nom" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="telephone">Téléphone</label>
+                                <input type="tel" id="telephone">
+                            </div>
+                            <div class="form-group">
+                                <label for="sujet">Sujet *</label>
+                                <select id="sujet" required>
+                                    <option value="">Sélectionnez un sujet</option>
+                                    <option>Information administrative</option>
+                                    <option>Problème technique avec le site</option>
+                                    <option>Demande de rendez-vous</option>
+                                    <option>Autre</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message *</label>
+                                <textarea id="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Envoyer le message <i class="fas fa-arrow-right"></i></button>
+                        </form>
+                        <div id="form-message" class="form-success" style="display:none;"></div>
+                    </div>
+
+                    <!-- Infos contact -->
+                    <div class="contact-infos">
+                        <div class="info-card">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <h3>Adresse</h3>
+                            <p>Fouda<br>ISTAG</p>
+                        </div>
+                        <div class="info-card">
+                            <i class="fas fa-phone"></i>
+                            <h3>Téléphone</h3>
+                            <p>691 17 49 74<br><small>Lun-Ven 8h-18h</small></p>
+                        </div>
+                        <div class="info-card">
+                            <i class="fas fa-envelope"></i>
+                            <h3>Email</h3>
+                            <p>info@istag-institu.info<br>www.istag-institut.info</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ -->
+                <div class="faq">
+                    <h2><i class="fas fa-question-circle"></i> Foire aux questions</h2>
+                    <div class="faq-grid">
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h3>Comment accéder aux notes de mon enfant ?</h3>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-reponse">
+                                <p>Un espace parents sécurisé est accessible via le portail Pronote. Vos identifiants vous ont été remis à la rentrée. Contactez le secrétariat si vous les avez perdus.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h3>Quelles sont les modalités d'inscription ?</h3>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-reponse">
+                                <p>Les inscriptions se font de janvier à mars pour la rentrée suivante. Retirez un dossier au secrétariat ou téléchargez-le dans la section Ressources.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h3>Y a-t-il une étude surveillée ?</h3>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-reponse">
+                                <p>Oui, l'étude est ouverte de 16h30 à 18h00 du lundi au vendredi. Une inscription préalable est requise.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>ISTAG FOUDA</h4>
+</div>
+            <div class="footer-section">
+                <h4>Horaires d'ouverture</h4>
+                <p>Lun-Ven : 8h00 - 18h00<br>Sam : 9h00 - 12h00</p>
+            </div>
+            <div class="footer-section">
+                <h4>Suivez-nous</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 ISTAG FOUDA </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GSI-ISTAG - Contact professeurs</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-graduation-cap"></i>
+                <span>ISTAG <span class="logo-light">GSI</span></span>
+            </div>
+            <div class="nav-links">
+                <a href="index.html"><i class="fas fa-home"></i> Accueil</a>
+                <a href="cours.html"><i class="fas fa-calendar-alt"></i> Cours & EDT</a>
+                <a href="ressources.html"><i class="fas fa-folder-open"></i> Ressources</a>
+                <a href="projets.html"><i class="fas fa-code"></i> Projets</a>
+                <a href="contact.html" class="active"><i class="fas fa-envelope"></i> Contact</a>
+            </div>
+            <div class="user-info">
+                <i class="fas fa-user-circle"></i>
+                <span>Étudiant GSI</span>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Contact & Rendez-vous</h1>
+                <p>Contacter vos professeurs ou prendre un rendez-vous</p>
+            </div>
+        </section>
+
+        <section class="contact">
+            <div class="container">
+                <div class="contact-grid">
+                    <!-- Liste des professeurs -->
+                    <div class="enseignants">
+                        <h2><i class="fas fa-chalkboard-user"></i> Corps enseignant GSI</h2>
+                        <div class="enseignant-card">
+                            <div class="enseignant-avatar">
+                                <i class="fas fa-user-tie"></i>
+                            </div>
+                            <div class="enseignant-info">
+                                <h3>Prof. NDOUMBE Jacques</h3>
+                                <p><i class="fas fa-database"></i> Bases de données avancées</p>
+                                <p><i class="far fa-envelope"></i> j.ndoumbe@istag.cm</p>
+                                <p><i class="fas fa-clock"></i> Permanence: Mercredi 14h-16h</p>
+                                <button class="btn-rdv" data-prof="NDOUMBE Jacques">Prendre RDV</button>
+                            </div>
+                        </div>
+
+                        <div class="enseignant-card">
+                            <div class="enseignant-avatar">
+                                <i class="fas fa-user-tie"></i>
+                            </div>
+                            <div class="enseignant-info">
+                                <h3>Prof. ESSOMBA Claire</h3>
+                                <p><i class="fas fa-code"></i> Développement Web avancé</p>
+                                <p><i class="far fa-envelope"></i> c.essomba@istag.cm</p>
+                                <p><i class="fas fa-clock"></i> Permanence: Lundi 10h-12h</p>
+                                <button class="btn-rdv" data-prof="ESSOMBA Claire">Prendre RDV</button>
+                            </div>
+                        </div>
+
+                        <div class="enseignant-card">
+                            <div class="enseignant-avatar">
+                                <i class="fas fa-user-tie"></i>
+                            </div>
+                            <div class="enseignant-info">
+                                <h3>Prof. TCHINDA Roger</h3>
+                                <p><i class="fas fa-chart-line"></i> Business Intelligence</p>
+                                <p><i class="far fa-envelope"></i> r.tchinda@istag.cm</p>
+                                <p><i class="fas fa-clock"></i> Permanence: Jeudi 14h-16h</p>
+                                <button class="btn-rdv" data-prof="TCHINDA Roger">Prendre RDV</button>
+                            </div>
+                        </div>
+
+                        <div class="enseignant-card">
+                            <div class="enseignant-avatar">
+                                <i class="fas fa-user-tie"></i>
+                            </div>
+                            <div class="enseignant-info">
+                                <h3>Prof. ONDOUA Marc</h3>
+                                <p><i class="fas fa-shield-alt"></i> Sécurité des SI</p>
+                                <p><i class="far fa-envelope"></i> m.ondoua@istag.cm</p>
+                                <p><i class="fas fa-clock"></i> Permanence: Mardi 9h-11h</p>
+                                <button class="btn-rdv" data-prof="ONDOUA Marc">Prendre RDV</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Formulaire de contact rapide -->
+                    <div class="contact-form">
+                        <h2><i class="fas fa-paper-plane"></i> Message rapide</h2>
+                        <form id="messageForm">
+                            <div class="form-group">
+                                <label>Votre nom *</label>
+                                <input type="text" id="nomEtudiant" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Votre email étudiant *</label>
+                                <input type="email" id="emailEtudiant" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Professeur destinataire *</label>
+                                <select id="profDestinataire" required>
+                                    <option value="">Sélectionnez</option>
+                                    <option>Prof. NDOUMBE Jacques</option>
+                                    <option>Prof. ESSOMBA Claire</option>
+                                    <option>Prof. TCHINDA Roger</option>
+                                    <option>Prof. ONDOUA Marc</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Objet *</label>
+                                <input type="text" id="objet" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Message *</label>
+                                <textarea id="messageContact" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Envoyer le message <i class="fas fa-arrow-right"></i></button>
+                        </form>
+                        <div id="contactMessage" class="form-success" style="display:none;"></div>
+                    </div>
+                </div>
+
+                <!-- Modal RDV (caché par défaut) -->
+                <div id="rdvModal" class="modal">
+                    <div class="modal-content">
+                        <span class="modal-close">&times;</span>
+                        <h3>Prendre rendez-vous</h3>
+                        <p>Avec : <strong id="profNom"></strong></p>
+                        <form id="rdvForm">
+                            <div class="form-group">
+                                <label>Votre nom *</label>
+                                <input type="text" id="rdvNom" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Votre email *</label>
+                                <input type="email" id="rdvEmail" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Date souhaitée *</label>
+                                <input type="date" id="rdvDate" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Heure souhaitée *</label>
+                                <input type="time" id="rdvHeure" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Sujet du rendez-vous *</label>
+                                <textarea id="rdvSujet" rows="3" required placeholder="Décrivez brièvement l'objet de votre demande"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Envoyer la demande</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4><i class="fas fa-graduation-cap"></i> ISTAG - GSI</h4>
+                <p>Institut Supérieur des Technologies Avancées et de Gestion<br>Filière Gestion des Systèmes d'Information</p>
+            </div>
+            <div class="footer-section">
+                <h4>Liens utiles</h4>
+                <ul>
+                    <li><a href="cours.html">Emploi du temps</a></li>
+                    <li><a href="ressources.html">Bibliothèque de cours</a></li>
+                    <li><a href="projets.html">Espace projets</a></li>
+                    <li><a href="contact.html">Contact professeurs</a></li>
+                </ul>
+            </div>
+         <div class="footer-section">
+                <h4>Contact</h4>
+                <p><i class="fas fa-map-marker-alt"></i> Quartier Fouda, Yaoundé</p>
+                <p><i class="fas fa-phone"></i> +237 691 17 49 74</p>
+                <p><i class="fas fa-envelope"></i> info@istag-institut.info</p>
+            </div>
+        <div class="footer-bottom">
+            <p>© 2026 ISTAG - Filière Gestion des Systèmes d'Information | Portail Étudiants</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>GSI-ISTAG - Ressources pédagogiques</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-school"></i>
+                <span>École Saint-Charles</span>
+            </div>
+            <div class="nav-links">
+                <a href="index.html"><i class="fas fa-home"></i> Accueil</a>
+                <a href="ressources.html"><i class="fas fa-folder-open"></i> Ressources</a>
+                <a href="actualites.html" class="active"><i class="fas fa-calendar-alt"></i> Actualités</a>
+                <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Actualités et événements</h1>
+                <p>Restez informés des dates importantes</p>
+            </div>
+        </section>
+
+        <section class="actualites">
+            <div class="container">
+                <div class="actu-grid">
+                    <!-- Calendrier -->
+                    <div class="calendrier">
+                        <h2><i class="fas fa-calendar"></i> Calendrier des événements</h2>
+                        <div class="events-list">
+                            <div class="event-item">
+                                <div class="event-date">
+                                    <span class="event-day">15</span>
+                                    <span class="event-month">NOV</span>
+                                </div>
+                                <div class="event-details">
+                                    <h3>Conseil de classe - 5ème B</h3>
+                                    <p>Salle de réunion - 18h00</p>
+                                </div>
+                            </div>
+                            <div class="event-item">
+                                <div class="event-date">
+                                    <span class="event-day">20</span>
+                                    <span class="event-month">NOV</span>
+                                </div>
+                                <div class="event-details">
+                                    <h3>Portes ouvertes</h3>
+                                    <p>Venez découvrir l'établissement - 10h-16h</p>
+                                </div>
+                            </div>
+                            <div class="event-item">
+                                <div class="event-date">
+                                    <span class="event-day">05</span>
+                                    <span class="event-month">DEC</span>
+                                </div>
+                                <div class="event-details">
+                                    <h3>Marché de Noël</h3>
+                                    <p>Organisé par l'APEL - Cour de l'école</p>
+                                </div>
+                            </div>
+                            <div class="event-item">
+                                <div class="event-date">
+                                    <span class="event-day">20</span>
+                                    <span class="event-month">DEC</span>
+                                </div>
+                                <div class="event-details">
+                                    <h3>Début des vacances de Noël</h3>
+                                    <p>Reprise le 06 janvier 2026</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Actualités récentes -->
+                    <div class="actus-recentes">
+                        <h2><i class="fas fa-newspaper"></i> Dernières actualités</h2>
+                        <div class="actu-card">
+                            <div class="actu-categorie">Info importante</div>
+                            <h3>Fermeture exceptionnelle le 22 novembre</h3>
+                            <p>En raison d'une journée pédagogique, l'école sera fermée le vendredi 22 novembre. La garderie sera assurée de 8h à 18h sur inscription.</p>
+                            <span class="actu-date">Publié le 01/11/2025</span>
+                        </div>
+                        <div class="actu-card">
+                            <div class="actu-categorie">Sortie scolaire</div>
+                            <h3>Sortie au musée d'Histoire naturelle - 4ème</h3>
+                            <p>Les classes de 4ème se rendront au musée le 28 novembre. Prévoir un pique-nique et une tenue adaptée.</p>
+                            <span class="actu-date">Publié le 25/10/2025</span>
+                        </div>
+                        <div class="actu-card">
+                            <div class="actu-categorie">Réunion parents</div>
+                            <h3>Réunion d'information orientation 3ème</h3>
+                            <p>Mardi 12 novembre à 18h30 en salle polyvalente. Thème : les procédures d'affectation post-3ème.</p>
+                            <span class="actu-date">Publié le 18/10/2025</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>École Saint-Charles</h4>
+                <p>12 rue de l'École<br>75001 Paris<br><i class="fas fa-phone"></i> 01 23 45 67 89</p>
+            </div>
+            <div class="footer-section">
+                <h4>Horaires d'ouverture</h4>
+                <p>Lun-Ven : 8h00 - 18h00<br>Sam : 9h00 - 12h00</p>
+            </div>
+            <div class="footer-section">
+                <h4>Suivez-nous</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 École Saint-Charles - Portail parents-élèves</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
